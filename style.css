@@ -1,0 +1,285 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.9)), url(images/gpp.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: start;
+
+
+}
+
+nav .logo {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.nav-links {
+
+    text-align: right;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.nav-links ul li ::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: rgb(229, 188, 2);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.nav-links ul li:hover ::after {
+    width: 100%;
+
+}
+
+.nav-links ul li a {
+    color: #fbfcff;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.text-box {
+    width: 200%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: large;
+}
+
+.text-box h1 {
+    font-size: 70px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 2rem;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: linear-gradient(rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.3));
+    position: relative;
+    cursor: pointer;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    padding: 15px 40px;
+    border: 1px solid white;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    background: rgb(64, 148, 220);
+}
+
+
+/*...faculties...*/
+.Course {
+    width: 88%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600px;
+}
+
+p {
+    color: gray;
+    width: 20;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: large;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Course-col {
+    flex-basis: 31%;
+    background: rgb(251, 232, 155);
+    border-radius: 200px;
+    margin-bottom: 5%;
+    padding: 30px 90px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+    font-size: large;
+}
+
+.Course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(221, 4, 4, 0.2);
+    transform: translateY(-8px);
+
+
+}
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 35%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.campus-col:nth-child(2) {
+    background: url(images/campus2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgb(157, 155, 155);
+    transition: 1s;
+}
+
+
+.layer h3 {
+    width: 100%;
+    font-weight: 600;
+    color: black;
+    font-size: 1.89rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layer:hover h3 {
+    bottom: 50%;
+    opacity: 2;
+}
+
+.cat {
+    min-height: 300px;
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4, 9, 32, 0.7), rgba(4, 9, 32, 0.7)), url(images/enro.jpg);
+    background-position: center;
+    background-color: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 100px 10;
+}
+
+.cat h1 {
+    color: white;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.5em;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/*..........................................................sub-header......................................................*/
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(images/bkgrd.jpg);
+    background-position: centar;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+
+
+}
